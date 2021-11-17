@@ -45,10 +45,8 @@ int main()
     }
             scanf("%c", &user);
         }
-   for(int i=0;i<10;i++){
-   for(int b=0;b<10;b++){
-      printf(mat[i][b]);
-   }
-        return 0;
+ 
+        
     }
+   return 0;
 }

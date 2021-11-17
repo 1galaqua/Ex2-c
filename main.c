@@ -43,7 +43,11 @@ int main()
         printf("%d", ans);
         printf("\n");
     }
-            scanf("%c", &user);
+         }
+        if (user=='D'){
+            return 0;
+        }else{
+            scanf("%c", &user); 
         }
  
         

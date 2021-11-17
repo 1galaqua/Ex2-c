@@ -51,7 +51,7 @@ int func2(int mat[10][10])
             // above picked source
             for (j = 0; j < 10; j++)
             {
-                if (dist[i][k] == 0 || dist[k][j == 0])
+                if (dist[i][k] == 0 || dist[k][j] == 0)
                 {
                     continue;
                 }

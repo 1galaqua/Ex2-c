@@ -17,12 +17,32 @@ int main()
         }
         else if (user == 'B')
         {
-            func2(mat);
+            int ans=func2(mat);
+            if (ans == 0)
+        {
+            printf("False");
+            printf("\n");
+        }
+    else
+        {
+            printf("True");
+            printf("\n");
+        }
             scanf("%c", &user);
         }
         else if (user == 'C')
         {
-            func3(mat);
+           int ans= func3(mat);
+           if (ans == 0)
+    {
+        printf("-1");
+        printf("\n");
+    }
+    else
+    {
+        printf("%d", ans);
+        printf("\n");
+    }
             scanf("%c", &user);
         }
 

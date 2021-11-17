@@ -25,7 +25,7 @@ void func1(int mat[][10])
     }
 }
 
-void func2(int mat[][10])
+int func2(int mat[][10])
 {
     int len;
     int row;
@@ -68,20 +68,13 @@ void func2(int mat[][10])
             }
         }
     }   
- if (dist[len][row] == 0)
-        {
-            printf("False");
-            printf("\n");
-        }
-    else
-        {
-            printf("True");
-            printf("\n");
-        }
+    return dist[len][row] ;
+        
+      
     
 }
 
-void func3(int mat[][10])
+int func3(int mat[][10])
 {
     int len;
     int row;
@@ -114,14 +107,6 @@ void func3(int mat[][10])
             }
         }
     }
-    if (dist[i][j] == 0)
-    {
-        printf("-1");
-        printf("\n");
-    }
-    else
-    {
-        printf("%d", dist[i][j]);
-        printf("\n");
-    }
+    return dist[i][j] ;
+   
 }

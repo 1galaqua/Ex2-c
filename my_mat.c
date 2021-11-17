@@ -1,7 +1,7 @@
 #include <stdio.h>
 #include "my_mat.h"
 
-void func1(int mat[][10])
+void func1(int mat[10][10])
 {
     int user;
 
@@ -25,7 +25,7 @@ void func1(int mat[][10])
     }
 }
 
-int func2(int mat[][10])
+int func2(int mat[10][10])
 {
     int len;
     int row;
@@ -74,7 +74,7 @@ int func2(int mat[][10])
     
 }
 
-int func3(int mat[][10])
+int func3(int mat[10][10])
 {
     int len;
     int row;

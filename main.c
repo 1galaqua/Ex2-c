@@ -13,7 +13,7 @@ int main()
         if (user == 'A')
         {
             func1(mat);
-            scanf("%c", &user);
+            
         }
         else if (user == 'B')
         {
@@ -28,7 +28,7 @@ int main()
             printf("True");
             printf("\n");
         }
-            scanf("%c", &user);
+            
         }
         else if (user == 'C')
         {

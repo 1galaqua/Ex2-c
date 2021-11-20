@@ -97,12 +97,22 @@ int func3(int mat[10][10])
             // above picked source
             for (j = 0; j < 10; j++)
             {
+                if (dist[i][k] == 0 || dist[k][j] == 0)
+                {
+                    continue;
+                }
+                if (dist[i][j] == 0 && i != j)
+                {
+                    dist[i][j] = dist[i][k] + dist[k][j];
+                }
                 // If vertex k is on the shortest path from
                 // i to j, then update the value of dist[i][j]
-                if (dist[i][k] + dist[k][j] < dist[i][j])
+                else if (dist[i][k] + dist[k][j] < dist[i][j])
+                {
                     dist[i][j] = dist[i][k] + dist[k][j];
+                }
             }
         }
     }
-    return dist[i][j];
+    return dist[len][row];
 }

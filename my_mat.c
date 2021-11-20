@@ -5,13 +5,13 @@ void func1(int mat[10][10])
 {
     int user;
 
-    for (int i = 0; i < 10; i++)
-    {
-        for (int b = 0; b < 10; b++)
-        {
-            mat[i][b] = 0;
-        }
-    }
+  //  for (int i = 0; i < 10; i++)
+   // {
+      //  for (int b = 0; b < 10; b++)
+     //  {
+        //    mat[i][b] = 0;
+       // }
+   // }
 
     for (int i = 0; i < 10; i++)
     {

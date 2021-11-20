@@ -11,17 +11,17 @@ void func1(int mat[10][10])
         {
             mat[i][b] = 0;
         }
+    }
 
-        for (int i = 0; i < 10; i++)
+    for (int i = 0; i < 10; i++)
+    {
+        for (int b = 0; b < 10; b++)
         {
-            for (int b = 0; b < 10; b++)
-            {
-                scanf("%d", &user);
-                mat[i][b] = user;
-            }
-
-            /* code */
+            scanf("%d", &user);
+            mat[i][b] = user;
         }
+
+        /* code */
     }
 }
 
@@ -67,11 +67,8 @@ int func2(int mat[10][10])
                 }
             }
         }
-    }   
-    return dist[len][row] ;
-        
-      
-    
+    }
+    return dist[len][row];
 }
 
 int func3(int mat[10][10])
@@ -107,6 +104,5 @@ int func3(int mat[10][10])
             }
         }
     }
-    return dist[i][j] ;
-   
+    return dist[i][j];
 }
